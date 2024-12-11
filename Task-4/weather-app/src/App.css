@@ -1,0 +1,147 @@
+/* App.css */
+
+/* Basic container styling */
+.container {
+  background-color: rgb(0, 38, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Styling for the weather card */
+.weather {
+  text-align: center;
+}
+
+/* Search bar styles */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search button {
+  background-color: #4CAF50;
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Input field focus effect */
+.search input:focus {
+  border-color: #4CAF50;
+}
+
+/* Error message styles */
+p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Weather info styles */
+.winfo {
+  margin-top: 20px;
+}
+
+.winfo img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+/* Temperature and city styles */
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 24px;
+  color: #9ea79e;
+}
+
+/* Details section for humidity and wind */
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.col img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.col .humidity,
+.col .wind {
+  font-size: 14px;
+}
+
+.col .humidity p,
+.col .wind p {
+  margin: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    margin-bottom: 20px;
+  }
+
+  .col img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+
